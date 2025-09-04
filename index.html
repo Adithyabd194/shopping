@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Your Shopping Cart</h1>
+        <nav>
+            <a href="#">Continue Shopping</a>
+            <a href="#">Checkout</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="cart-items">
+            <div class="cart-header">
+                <span>Product</span>
+                <span>Price</span>
+                <span>Quantity</span>
+                <span>Total</span>
+                <span>Action</span>
+            </div>
+            <div class="cart-item">
+                <div class="product-info">
+                    <img style="height: 176px;width: 270px;" src="headphone.jpg" alt="Product Image">
+                    <div class="product-details">
+                        <h3>Premium Headphones</h3>
+                        <p>Wireless, Noise Cancelling</p>
+                    </div>
+                </div>
+                <div class="product-price">$129.99</div>
+                <div class="product-quantity">
+                    <button class="quantity-btn decrease">-</button>
+                    <input type="number" class="quantity-input" value="1" min="1">
+                    <button class="quantity-btn increase">+</button>
+                </div>
+                <div class="product-total">$129.99</div>
+                <div class="product-actions">
+                    <button class="remove-btn">Remove</button>
+                </div>
+            </div>
+            <div class="cart-item">
+                <div class="product-info">
+                    <img style="height: 176px;width: 320px;" src="smart-watch.jpg" alt="Product Image">
+                    <div class="product-details">
+                        <h3>Smart Watch</h3>
+                        <p>Fitness Tracker, Water Resistant</p>
+                    </div>
+                </div>
+                <div class="product-price">$199.99</div>
+                <div class="product-quantity">
+                    <button class="quantity-btn decrease">-</button>
+                    <input type="number" class="quantity-input" value="1" min="1">
+                    <button class="quantity-btn increase">+</button>
+                </div>
+                <div class="product-total">$199.99</div>
+                <div class="product-actions">
+                    <button class="remove-btn">Remove</button>
+                </div>
+            </div>
+            <div class="cart-item">
+                <div class="product-info">
+                    <img style="height: 176px;width: 320px;" src="powerbank.jpg" alt="Product Image">
+                    <div class="product-details">
+                        <h3>Wireless Charger</h3>
+                        <p>Fast Charging, Universal</p>
+                    </div>
+                </div>
+                <div class="product-price">$39.99</div>
+                <div class="product-quantity">
+                    <button class="quantity-btn decrease">-</button>
+                    <input type="number" class="quantity-input" value="1" min="1">
+                    <button class="quantity-btn increase">+</button>
+                </div>
+                <div class="product-total">$39.99</div>
+                <div class="product-actions">
+                    <button class="remove-btn">Remove</button>
+                </div>
+            </div>
+        </section>
+
+        <aside class="cart-summary">
+            <h2>Order Summary</h2>
+            <div class="summary-item">
+                <span>Subtotal:</span>
+                <span id="subtotal">$369.97</span>
+            </div>
+            <div class="summary-item">
+                <span>Shipping:</span>
+                <span id="shipping">$9.99</span>
+            </div>
+            <div class="summary-item">
+                <span>Tax:</span>
+                <span id="tax">$29.60</span>
+            </div>
+            <div class="summary-item total">
+                <span>Total:</span>
+                <span id="total">$409.56</span>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+            <p class="security-note">🔒 Secure checkout. All data is encrypted.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Your Store. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
